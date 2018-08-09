@@ -1,0 +1,40 @@
+<div class="wrapper">
+
+<%= image_tag("wine.jpg", :alt => "Wine", :class => "avatar")  %>
+
+<div class="title">
+  <h2><strong><i>~A list of our wonderful cocktails~</i> </strong> </h2>
+  <h1><strong>Enjoy!</strong> </h1>
+</div>
+
+  <%= link_to "Add new Cocktail", new_cocktail_path, :class => "link btn btn-danger" %>
+
+<div class="container">
+  <div class="row">
+
+
+    <% @cocktails.each do |cocktail| %>
+
+      <div class="col-xs-12 col-md-4">
+
+        <%= link_to cocktail_path(cocktail), :class => "link" do  %>
+
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= %w{shanghai paris london berlin}.sample %>);'">
+            <div class="card-category"><h1><strong> <%= cocktail.name %></strong></h1> </div>
+            <div class="card-description">
+              <h2><%= cocktail.name %></h2>
+            </div>
+            <img class="card-user" src="https://fillmurray.com/g/300/300">
+          </div>
+
+        <% end %>
+
+       </div>
+    <% end %>
+
+      <!-- insert <div class="card"> -->
+</div>
+
+</div>
+
+

@@ -1,0 +1,59 @@
+<div class="wrapper">
+
+<div class="container">
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+  <div class="banner-content">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+<div class="title-card">
+
+  <div class="row">
+
+    <div class="col-sm-3">
+    </div>
+
+    <div class="col-sm-6">
+
+      <div class="inner-list">
+      <ul>
+        <% @doses.each do |dose| %>
+        <li>
+          <p><em>Ingredient:  </em></p><p><strong> <%= dose.ingredient.name %></strong></p>
+        </li>
+        <li>
+          <p><em>Description:  </em><strong></p> <p> <%= dose.description %></strong> </p>
+        </li>
+        <% end %>
+      </ul>
+      </div>
+
+
+        <%= link_to 'Back', cocktails_path, :class => "link"%>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="middle-card">
+  <div class="row">
+
+
+    <div class="col-sm-12">
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</div>
+</div>
+

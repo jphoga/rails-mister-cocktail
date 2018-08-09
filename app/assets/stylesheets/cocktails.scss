@@ -1,0 +1,145 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+  text-align: center;
+}
+
+.new-wrapper {
+  text-align: center;
+  margin: 40px;
+  height: calc(100vh - 240px);
+}
+
+.form-fields {
+
+}
+
+.button {
+
+}
+
+.link {
+  margin-top: 30px;
+}
+
+.title-card {
+  padding-top: 20px;
+  padding-bottom: 50px;                              /* Internal space */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);       /* OR subtle border */
+  margin-top: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  p {
+    line-height: 16px;
+    font-size: 15px;
+    ;
+  }
+  h5 {
+    padding-top: 10px;
+  }
+
+  ul {
+  list-style-type: none;
+  padding: 0;
+
+    li {
+      padding-bottom: 15px;
+      p {
+        line-height: 16px;
+      }
+    }
+
+  }
+
+}
+
+.inner-list {
+  margin-top: 50px;
+}
+
+.middle-card {
+  padding: 30px;                              /* Internal space */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);       /* OR subtle border */
+  margin: 0 30  0px;
+  p {
+    line-height: 20px;
+    ;
+  }
+  h3 {
+    padding-top: 20px;
+  }
+
+  ul {
+  list-style-type: none;
+  padding: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.yellow-star {
+  color: gold;
+}
+
+.blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin-top: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 20px 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align:justify;
+  p {
+    padding: 20px;
+  }
+}
+.blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.blockquote p {
+  display: inline;
+}
+
+.text-block {
+  text-align: justify;
+}
+
+.ratings {
+  padding-top:20px;
+  padding-bottom: 40px;
+  margin-left: 400px;
+  margin-right: 400px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);       /* OR subtle border */
+}
+
+.lower-card {
+
+}
+
+
+.title {
+  margin-top: 30px;
+}
+
+.avatar {
+  margin-top: 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
