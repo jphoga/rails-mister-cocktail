@@ -12,42 +12,36 @@
 
   <div class="row">
 
-    <div class="col-sm-3">
-    </div>
-
-    <div class="col-sm-6">
-
+      <h1>Ingredients</h1>
+      <h3> &</h3>
+      <h1>doses</h1>
       <div class="inner-list">
       <ul>
+        <% count = 1 %>
         <% @doses.each do |dose| %>
-        <li>
-          <p><em>Ingredient:  </em></p><p><strong> <%= dose.ingredient.name %></strong></p>
-        </li>
-        <li>
-          <p><em>Description:  </em><strong></p> <p> <%= dose.description %></strong> </p>
-        </li>
-        <% end %>
+        <div class="step-wrapper">
+          <div class="col-sm-4">
+            <h3><strong><%= count%>. step:</strong>  </h3>
+            <li>
+              <p><%= dose.description %> <%= dose.ingredient.name %> </p>
+
+              <i class="fas fa-trash"></i>
+
+            </li>
+          </div>
+        </div>
+
+        <% count += 1  %>
+
+      <% end %>
       </ul>
-      </div>
-
-
-        <%= link_to 'Back', cocktails_path, :class => "link"%>
     </div>
     </div>
 
   </div>
 </div>
-
-<div class="middle-card">
-  <div class="row">
-
-
-    <div class="col-sm-12">
-
-
-
-    </div>
-
+  <div class="back-link">
+    <%= link_to 'Back', cocktails_path, :class => "link"%>
   </div>
 
 </div>

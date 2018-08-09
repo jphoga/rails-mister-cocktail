@@ -1,14 +1,37 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: 'Merienda One', cursive;
+}
+
+p {
+  font-family: 'PT Mono', monospace;
+}
+
+.back-link {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
 .wrapper {
   text-align: center;
+  background-color: white;
+
+}
+
+.row-sizer {
+  margin-top: 80px;
+  height: calc(100vh - 100px);
 }
 
 .new-wrapper {
   text-align: center;
-  margin: 40px;
-  height: calc(100vh - 240px);
+  margin-top: 40px;
+}
+
+.container h1 {
+  padding-bottom: 0;
 }
 
 .form-fields {
@@ -141,5 +164,19 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.step-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fa-trash {
+  color: #E2E4E6;
+}
+
+.fa-trash:hover {
+    color: gray;
+  }
 
 

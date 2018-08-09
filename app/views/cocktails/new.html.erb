@@ -1,6 +1,11 @@
 <div class="new-wrapper">
 
+
 <div class="container">
+
+  <h1>Enter your new cocktail here</h1>
+  <div class="row-sizer">
+
   <div class="row">
     <div class="col-sm-3">
     </div>
@@ -12,7 +17,7 @@
           <%= d.input :description, label: "Dose description" %>
           <% end%>
         <%= c.simple_fields_for :ingredients do |i| %>
-          <%= i.input :name, label: "ingredients description" %>
+          <%= i.input :name, collection: @ingredients %>
         <% end%>
       <div class="button">
         <%= c.submit "Add a cocktail", class: "btn btn-danger" %>
@@ -22,6 +27,8 @@
         <%= link_to 'Back', cocktails_path, :class => "link real-link"%>
       </div>
     </div>
+  </div>
+
   </div>
 
 </div>

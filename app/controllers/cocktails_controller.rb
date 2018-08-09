@@ -11,6 +11,14 @@ class CocktailsController < ApplicationController
   end
 
   def new
+    ingredients = Ingredient.all
+
+    @ingredients = []
+    ingredients.each do |ingredient|
+      @ingredients << ingredient.name
+    end
+    @ingredients.sort!
+
     @cocktail = Cocktail.new
     @cocktail.doses.build
   end

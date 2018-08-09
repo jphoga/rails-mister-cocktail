@@ -1,6 +1,8 @@
 <div class="wrapper">
 
-<%= image_tag("wine.jpg", :alt => "Wine", :class => "avatar")  %>
+<div class="banner" style="background-image: cover,linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%)">
+  <%= image_tag 'cocktails' %>
+</div>
 
 <div class="title">
   <h2><strong><i>~A list of our wonderful cocktails~</i> </strong> </h2>
@@ -20,11 +22,7 @@
         <%= link_to cocktail_path(cocktail), :class => "link" do  %>
 
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= %w{shanghai paris london berlin}.sample %>);'">
-            <div class="card-category"><h1><strong> <%= cocktail.name %></strong></h1> </div>
-            <div class="card-description">
-              <h2><%= cocktail.name %></h2>
-            </div>
-            <img class="card-user" src="https://fillmurray.com/g/300/300">
+          <div class="card-category"><h1><strong> <%= cocktail.name %></strong></h1> </div>
           </div>
 
         <% end %>
