@@ -25,7 +25,7 @@
             <li>
               <p><%= dose.description %> <%= dose.ingredient.name %> </p>
               <%= link_to dose_path(dose),:class => "link real-link", method: :delete, data: { confirm: "Are you sure?" } do %>
-                  <i class="fas fa-trash-alt"></i>
+                  <i class="fas fa-trash"></i>
                 <% end %>
 
             </li>
