@@ -1,5 +1,3 @@
-require 'byebug'
-
 class CocktailsController < ApplicationController
   before_action :set_cocktails, only: [:show, :edit, :update]
 
