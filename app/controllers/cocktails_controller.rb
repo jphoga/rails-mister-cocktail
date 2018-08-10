@@ -1,12 +1,13 @@
 require 'byebug'
 
 class CocktailsController < ApplicationController
+  before_action :set_cocktails, only: [:show, :edit, :update]
+
   def index
     @cocktails = Cocktail.all
   end
 
   def show
-    @cocktail = Cocktail.find(params[:id])
     @doses = Dose.where(cocktail_id: @cocktail.id)
   end
 
@@ -39,10 +40,24 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @cocktail.update(cocktail_params)
+
+    redirect_to cocktails_path
+  end
+
+
   private
 
   def cocktail_params
     params.require(:cocktail).permit(:id, :name)
+  end
+
+  def set_cocktails
+    @cocktail = Cocktail.find(params[:id])
   end
 
 end

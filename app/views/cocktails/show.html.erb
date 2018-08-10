@@ -24,8 +24,9 @@
             <h3><strong><%= count%>. step:</strong>  </h3>
             <li>
               <p><%= dose.description %> <%= dose.ingredient.name %> </p>
-
-              <i class="fas fa-trash"></i>
+              <%= link_to dose_path(dose),:class => "link real-link", method: :delete, data: { confirm: "Are you sure?" } do %>
+                  <i class="fas fa-trash-alt"></i>
+                <% end %>
 
             </li>
           </div>
